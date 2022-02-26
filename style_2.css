@@ -1,0 +1,300 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e97d17ee;
+}
+.header {
+  background-image: url(../images2/food3.jpg);
+  width: 100%;
+  height: 380px;
+  text-align: center;
+  font-family: cursive;
+  color: rgb(236, 222, 19);
+  font-size: x-large;
+}
+.header h1 {
+  padding-top: 70px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(255, 255, 255);
+}
+.header h3 {
+  color: rgb(240, 240, 240);
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 700px) {
+  .header {
+    margin-left: 0%;
+    margin-right: 15px;
+    background-image: url(../images2/food3.jpg);
+  }
+}
+@media (max-width: 700px) {
+  .box1 {
+    margin-left: 0px;
+    margin-right: 15px;
+    background-image: url(../images2/food3.jpg);
+  }
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav img {
+  width: 16px;
+  height: 10px;
+  position: top;
+}
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+.nav-links ul li {
+  display: inline-block;
+  padding: 3px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: solid;
+  font-weight: bold;
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.nav-links ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: rgb(0, 0, 0);
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+.middle {
+  display: flex;
+  height: 500px;
+}
+.box2 {
+  padding: 2px;
+  width: 50%;
+  position: relative;
+}
+.middle img{
+  width: 100%;
+  height: 500px;
+}
+.text1{
+  position: absolute;
+  top: 17px;
+  left: 35vh;
+  color: aliceblue;
+  /* transform: translate(-50%,-50%); */
+}
+.text2{
+position: absolute;
+text-align: center;
+top: 17px;
+left: 30%;
+color:aqua;
+  /* transform: translate(-50%,-50%); */
+}
+.btn {
+  margin-top: 70px;
+  margin-left: 4;
+  padding: 1em;
+  height: 80px;
+  width: 100px;
+  text-decoration: solid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  background: rgb(236, 234, 234);
+  color: rgb(14, 13, 13);
+  border: 3px solid rgb(231, 138, 31);
+  position:absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.btn:hover {
+  border: 1px saddlebrown;
+  background: rgb(255, 30, 0);
+  transition: 1s;
+}
+
+@media (max-width: 700px) {
+  .nav-links ul li {
+    display: block;
+  }
+  .nav-links {
+    position: absolute;
+    background-color: rgb(231, 60, 60);
+    height: 25vh;
+    width: 150px;
+    top: 0%;
+    right: 0%;
+    text-align: left;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  .box2 {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .box2 img {
+    margin-left: 0px;
+    margin-right: 10px;
+  }
+}
+
+/*                           testimonials*/
+.testimonials h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 5px;
+  text-transform: uppercase;
+}
+.testimonials h1::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 200px;
+  margin: 20px auto 5px;
+  background: #fffefe;
+}
+.testimonials p {
+  text-align: center;
+}
+.container {
+  display: flex;
+}
+.testimonial {
+  box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  flex: 40%;
+  background: #bbbbbb;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  font-size: 20px;
+  height: 510px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*clearning float */
+.testimonial::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.testimonials img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  border-radius: 50%;
+}
+
+/* Responsive testimonial*/
+@media (max-width: 700px) {
+  .testimonial {
+    text-align: center;
+  }
+  .testimonial img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
+/*                        Contact us*/
+.location h1 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 2px;
+}
+.location iframe {
+  width: 100%;
+}
+.contact-us {
+  display: grid;
+  grid: 150px / auto auto auto;
+  grid-gap: 5px;
+}
+.contact-us div {
+  background-color: #eb3333ee;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  color: bisque;
+}
+@media screen and (max-width=700px) {
+  .location {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+  .contact-us {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 15px;
+  }
+}
+
+/*                 chefs special */
+.special_menu_1 h1 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 2px;
+}
+.special_menu_1 {
+  padding: 3px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+  height: 300px;
+  text-align: center;
+}
+.food1 {
+  padding: 2px;
+  width: 25%;
+}
+.food img {
+  width: 100%;
+  height: 187px;
+}
+.food {
+  display: flex;
+}
+
+/*                       footer*/
+.footer div {
+  margin-top: 2px;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  color: rgb(224, 7, 116);
+  background-color: rgb(8, 8, 8);
+  height: fit-content;
+}
+.footer a {
+  text-decoration: solid;
+  color: bisque;
+}
+@media screen and (max-width: 700px) {
+  .footer {
+    width: 100%;
+  }
+}
+/* -----------------*/
+@media screen and (max-width: 700px) {
+  .food1 {
+    width: 50%;
+  }
+  .food1 h2 {
+    font-size: 18px;
+  }
+}
