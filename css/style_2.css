@@ -19,7 +19,7 @@ body {
   color: rgb(255, 255, 255);
 }
 .header h3 {
-  color: rgb(56, 10, 143);
+  color: rgb(240, 240, 240);
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -83,47 +83,44 @@ body {
 .box2 {
   padding: 2px;
   width: 50%;
+  position: relative;
 }
 .middle img{
   width: 100%;
   height: 500px;
 }
-.text1 h3{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+.text1{
+  position: absolute;
+  top: 17px;
+  left: 35vh;
+  color: aliceblue;
+  /* transform: translate(-50%,-50%); */
 }
 .text2{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+position: absolute;
+text-align: center;
+top: 17px;
+left: 30%;
+color:aqua;
+  /* transform: translate(-50%,-50%); */
 }
-/* .box2 h3 {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: x-large;
-  font-weight: bolder;
-  color: rgb(231, 118, 25);
-}
-.box2 p {
-  color: rgb(238, 56, 32);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bolder;
-} */
 .btn {
-  top: 50%;
-  left: 50%;
-  /* margin-top: 70px;
+  margin-top: 70px;
   margin-left: 4;
-  padding: 1em; */
+  padding: 1em;
+  height: 80px;
+  width: 100px;
   text-decoration: solid;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
   background: rgb(236, 234, 234);
   color: rgb(14, 13, 13);
   border: 3px solid rgb(231, 138, 31);
-  position: absolute;
+  position:absolute;
+  top: 40vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 .btn:hover {
   border: 1px saddlebrown;
@@ -138,7 +135,7 @@ body {
   .nav-links {
     position: absolute;
     background-color: rgb(231, 60, 60);
-    height: 45vh;
+    height: 25vh;
     width: 150px;
     top: 0%;
     right: 0%;
@@ -154,17 +151,9 @@ body {
     margin-left: 0px;
     margin-right: 10px;
   }
-  .middle {
-    display: flex;
-  }
 }
 
 /*                           testimonials*/
-.testimonials {
-  height: 510px;
-  color: rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-}
 .testimonials h1 {
   font-size: 40px;
   text-align: center;
@@ -194,6 +183,9 @@ body {
   padding: 16px;
   margin: 16px;
   font-size: 20px;
+  height: 510px;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*clearning float */
 .testimonial::after {
